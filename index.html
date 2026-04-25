@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>魚心｜小樽駅近く、魚がうまい小さな居酒屋</title>
-  <meta name="description" content="小樽駅から徒歩約2〜3分。北海道小樽市稲穂の居酒屋『魚心』を紹介する非公式案内ページ。営業時間、メニュー例、アクセス、来店前の確認ポイントを掲載。" />
-  <meta property="og:title" content="魚心｜小樽駅近く、魚がうまい小さな居酒屋" />
-  <meta property="og:description" content="小樽駅近く、北の魚と一杯を気軽に楽しめる魚料理居酒屋の非公式紹介ページ。" />
+  <title>魚心 非公式案内｜小樽駅近く、魚がうまい小さな居酒屋</title>
+  <meta name="description" content="小樽駅から徒歩約2〜3分。北海道小樽市稲穂の居酒屋『魚心』を紹介する非公式案内ページ。公開情報をもとに、来店前の確認ポイントを整理。" />
+  <meta property="og:title" content="魚心 非公式案内｜小樽駅近く、魚がうまい小さな居酒屋" />
+  <meta property="og:description" content="公式サイトではありません。小樽駅近く、北の魚と一杯を気軽に楽しめる魚料理居酒屋の非公式案内ページ。" />
   <meta property="og:type" content="website" />
   <meta name="theme-color" content="#102b35" />
   <style>
@@ -44,7 +44,8 @@
       color: #fff7ea; background: rgba(8, 30, 38, .66); backdrop-filter: blur(14px);
       border-bottom: 1px solid rgba(255,255,255,.12);
     }
-    .brand { letter-spacing: .18em; font-weight: 800; font-size: 1.05rem; }
+    .brand { letter-spacing: .14em; font-weight: 800; font-size: 1.05rem; }
+    .brand span { margin-left: .75em; padding: 3px 8px; border: 1px solid rgba(255,255,255,.34); border-radius: 999px; font-family: system-ui, sans-serif; font-size: .68rem; letter-spacing: .08em; color: #ffe6b6; }
     .navlinks { display: flex; gap: 18px; font-family: system-ui, sans-serif; font-size: .86rem; }
     .navlinks a { text-decoration: none; opacity: .9; }
     .unofficial {
@@ -57,6 +58,7 @@
       padding: 10px clamp(18px, 4vw, 52px);
       text-align: center;
     }
+    .unofficial strong { color: #8a3e24; }
     .hero {
       min-height: 88svh; position: relative; overflow: hidden; color: #fff8ed;
       display: grid; place-items: center; padding: 6.4rem 1.3rem 5rem;
@@ -127,6 +129,7 @@
     }
     @media (max-width: 540px) {
       .unofficial { margin-top: 52px; text-align: left; }
+      .brand span { display: none; }
       section { width: min(100% - 28px, 1120px); }
       .status, .quick .panel { grid-template-columns: 1fr; }
       .quick-item { border-right: 0; border-bottom: 1px solid var(--line); }
@@ -138,14 +141,14 @@
     }
   </style>
 </head>
-<body>
+<body id="top">
   <nav class="nav" aria-label="主要ナビゲーション">
-    <div class="brand">魚心</div>
+    <div class="brand">魚心 <span>非公式案内</span></div>
     <div class="navlinks">
       <a href="#about">魚心について</a><a href="#menu">お品書き</a><a href="#info">店舗情報</a><a href="#access">アクセス</a>
     </div>
   </nav>
-  <div class="unofficial">このページは公開情報をもとに作成した非公式の紹介ページです。最新情報は店舗へ直接ご確認ください。</div>
+  <div class="unofficial"><strong>非公式案内ページです。</strong> このページは公開情報をもとに作成しています。営業時間・価格・電話番号などの最新情報は、来店前に店舗または各掲載元でご確認ください。</div>
 
   <header class="hero">
     <div class="hero-inner">
@@ -154,7 +157,7 @@
         <h1>魚心</h1>
         <p class="hero-copy">小樽駅から歩いてすぐ。北の魚と気取らない一杯を、カウンターと小上がりでゆっくり楽しむ小さな居酒屋。</p>
         <div class="buttons">
-          <a class="btn primary" href="tel:0134326531">電話する 0134-32-6531</a>
+          <a class="btn primary" href="tel:0134326531">電話する前に最新確認 0134-32-6531</a>
           <a class="btn light" href="https://www.google.com/maps/search/?api=1&query=%E9%AD%9A%E5%BF%83%20%E5%B0%8F%E6%A8%BD%E5%B8%82%E7%A8%B2%E7%A9%822-14-8" target="_blank" rel="noopener">地図で見る</a>
         </div>
       </div>
@@ -168,7 +171,7 @@
           <div><b>最寄り</b>JR小樽駅 徒歩約2〜3分</div>
           <div><b>予約</b>電話確認がおすすめ</div>
         </div>
-        <p class="note">仕入れや混雑により、営業状況・品切れ・価格が変わる場合があります。</p>
+        <p class="note">電話番号・営業時間は公開掲載情報にもとづく参考です。変更の可能性があります。</p>
       </aside>
     </div>
   </header>
@@ -194,24 +197,24 @@
 
     <section id="menu">
       <div class="section-title"><span class="small">MENU</span><h2>魚心らしさが伝わる、お品書き例。</h2></div>
-      <p class="menu-note note">以下は公開サイト・ユーザー投稿・口コミから確認できたメニュー例です。公式メニューではないため、価格と提供状況は来店前にご確認ください。</p>
+      <p class="menu-note note">以下は公開サイト・ユーザー投稿・口コミから確認できたメニュー例です。公式メニューではないため、価格欄は「投稿時点の目安」として丸めています。</p>
       <div class="grid two">
         <article class="panel menu-card">
           <h3>魚介・肴 <span class="tag">海のもの</span></h3>
           <ul class="menu-list">
-            <li><span>生ニシン刺身</span><span class="price">¥680</span><small>ユーザー投稿口コミに掲載された一例。</small></li>
-            <li><span>活ホッキ刺身</span><span class="price">¥700</span><small>活ホッキ貝を楽しんだ口コミあり。</small></li>
-            <li><span>つぶ焼き</span><span class="price">¥680</span><small>Yahoo!マップのメニュー表示に掲載。</small></li>
-            <li><span>いかの塩から</span><span class="price">¥400</span><small>酒の肴に合う定番として口コミに掲載。</small></li>
+            <li><span>生ニシン刺身</span><span class="price">約700円</span><small>ユーザー投稿口コミに掲載された一例。価格は投稿時点の目安。</small></li>
+            <li><span>活ホッキ刺身</span><span class="price">約700円</span><small>活ホッキ貝を楽しんだ口コミあり。</small></li>
+            <li><span>つぶ焼き</span><span class="price">約700円</span><small>Yahoo!マップのメニュー表示に掲載。価格は投稿時点の目安。</small></li>
+            <li><span>いかの塩から</span><span class="price">約400円</span><small>酒の肴に合う定番として口コミに掲載。価格は投稿時点の目安。</small></li>
           </ul>
         </article>
         <article class="panel menu-card">
           <h3>揚げ物・お酒 <span class="tag">一杯に合う</span></h3>
           <ul class="menu-list">
-            <li><span>さきいか天ぷら</span><span class="price">¥550</span><small>ユーザー投稿口コミに掲載された一例。</small></li>
+            <li><span>さきいか天ぷら</span><span class="price">約600円</span><small>ユーザー投稿口コミに掲載された一例。価格は投稿時点の目安。</small></li>
             <li><span>魚心唐揚げ</span><span class="price">店頭確認</span><small>食べログ口コミで名前が見られたメニュー。</small></li>
-            <li><span>小樽ビール</span><span class="price">¥600</span><small>口コミ掲載例。</small></li>
-            <li><span>熱燗（千歳鶴）</span><span class="price">¥600</span><small>口コミ掲載例。</small></li>
+            <li><span>小樽ビール</span><span class="price">約600円</span><small>口コミ掲載例。価格は投稿時点の目安。</small></li>
+            <li><span>熱燗（千歳鶴）</span><span class="price">約600円</span><small>口コミ掲載例。価格は投稿時点の目安。</small></li>
           </ul>
         </article>
       </div>
@@ -234,9 +237,10 @@
           </table>
         </div>
         <aside class="panel callout">
-          <h3>このページで改善したこと</h3>
-          <p>公式サイトと誤認されないよう非公式表記を明確化し、来店前に必要な情報を上部へ集約しました。メニューは「確認できた例」として扱い、価格変動リスクも明示しています。</p>
-          <div class="buttons"><a class="btn primary" href="tel:0134326531">電話で最新情報を確認</a></div>
+          <h3>楽しみ方の目安</h3>
+          <p><strong>ひとりなら</strong> カウンターで魚介の肴と一杯。<br><strong>二人なら</strong> 小上がりで刺身・焼き物・揚げ物を少しずつ。<br><strong>観光帰りなら</strong> 小樽駅近くで、帰りの時間を気にしながら寄りやすい一軒です。</p>
+          <p class="note">席数が多くないため、訪問前の電話確認がおすすめです。</p>
+          <div class="buttons"><a class="btn primary" href="tel:0134326531">空席・営業を確認する</a></div>
         </aside>
       </div>
     </section>
@@ -260,13 +264,17 @@
             <li>席が空いているか</li>
             <li>食べたい魚介があるか</li>
           </ul>
-          <div class="buttons"><a class="btn primary" href="tel:0134326531">電話で確認する</a><a class="btn light" href="#info">営業時間を見る</a></div>
+          <div class="buttons"><a class="btn primary" href="tel:0134326531">電話で確認する</a><a class="btn light" href="#info">営業時間を見る</a><a class="btn light" href="#top">ページ上部へ</a></div>
         </div>
       </div>
     </section>
 
     <div class="source note">
-      参照: ホットペッパーグルメ、楽天ぐるなび、食べログ、Yahoo!マップの公開掲載情報・口コミ要約（2026年4月確認）。このページは公式サイトではありません。最新情報は店舗へ直接ご確認ください。
+      <strong>参照元（公開情報）:</strong>
+      <a href="https://www.hotpepper.jp/strJ000256851/" target="_blank" rel="noopener">ホットペッパーグルメ</a> /
+      <a href="https://r.gnavi.co.jp/pmtcatef0000/" target="_blank" rel="noopener">楽天ぐるなび</a> /
+      <a href="https://tabelog.com/hokkaido/A0106/A010601/1018034/" target="_blank" rel="noopener">食べログ</a> /
+      Yahoo!マップの公開掲載情報・口コミ要約（2026年4月確認）。このページは公式サイトではありません。最新情報は店舗へ直接ご確認ください。
     </div>
   </main>
   <footer>
